@@ -1,3 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Platformer - Ahomine_</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1b5e20, #43a047);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 15px 0;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8e6c9;
+    }
+
+    .container {
+      margin-top: 100px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      text-align: center;
+      max-width: 900px;
+    }
+
+    h1 {
+      color: #c8e6c9;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #f0f0f0;
+      margin-bottom: 30px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
 <body>
   <nav>
     <a href="index.html">Présentation</a>
@@ -8,16 +82,10 @@
 
   <div class="container">
     <h1>🐾 Cat Platformer: Dimension Switch</h1>
-    <p class="description">
-      Voici mon jeu développé avec Scratch et TurboWarp !<br>
-      Il est intégré juste ici 👇
-    </p>
+    <p>Voici mon jeu développé avec Scratch et TurboWarp !<br>
+    Il est intégré juste ici 👇</p>
 
-    <iframe 
-      src="jeu/jeu1.html" 
-      width="800" 
-      height="600" 
-      style="border: none; border-radius: 12px; box-shadow: 0 0 20px rgba(0,0,0,0.4);">
-    </iframe>
+    <iframe src="jeu/jeu1.html" allowfullscreen></iframe>
   </div>
 </body>
+</html>
