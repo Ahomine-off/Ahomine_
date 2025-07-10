@@ -1,4 +1,4 @@
-/* 🐾 Style global partagé */
+/* 🐾 Style partagé — Made with Copilot & Clément */
 
 body {
   margin: 0;
@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
 }
 
+/* 🧭 Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -36,6 +37,7 @@ nav a:hover {
   color: #c8e6c9;
 }
 
+/* 📦 Contenu central */
 .container {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 40px;
@@ -46,12 +48,14 @@ nav a:hover {
   margin-top: 120px;
 }
 
+/* 🎯 Titres */
 h1 {
   font-size: 2.5em;
   margin-bottom: 30px;
   color: #e0f2f1;
 }
 
+/* 🔘 Boutons */
 .button {
   display: inline-block;
   margin: 15px;
@@ -70,6 +74,7 @@ h1 {
   transform: scale(1.05);
 }
 
+/* 📱 Responsive mobile */
 @media screen and (max-width: 600px) {
   h1 {
     font-size: 2em;
@@ -83,5 +88,10 @@ h1 {
   nav a {
     font-size: 16px;
     margin: 0 10px;
+  }
+
+  .container {
+    padding: 20px;
+    margin-top: 160px;
   }
 }
