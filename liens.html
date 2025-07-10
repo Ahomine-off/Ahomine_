@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Liens - Ahomine_</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="image/Ahomine_.png">
+  <link rel="icon" type="image/png" href="image/Ahomine_.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav>
@@ -14,6 +15,8 @@
     <a href="projet.html">Projet</a>
   </nav>
 
+  <div id="catTrigger" title="Chat surprise"></div>
+
   <div class="container">
     <h1>🔗 Mes liens officiels</h1>
     <a class="button" href="https://modrinth.com/user/Ahomine_" target="_blank">Modrinth</a>
@@ -21,5 +24,12 @@
     <a class="button" href="https://youtube.com/@Ahomine-officiel" target="_blank">YouTube</a>
     <a class="button" href="https://github.com/Ahomine-off" target="_blank">GitHub</a>
   </div>
+
+  <script>
+    // 🐾 Made with Copilot & Clément
+    document.getElementById("catTrigger").addEventListener("click", () => {
+      document.body.innerHTML = "<div style='font-size:100px; text-align:center; margin-top:20vh;'>😺</div>";
+    });
+  </script>
 </body>
 </html>
