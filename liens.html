@@ -7,41 +7,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* 🎯 Style exclusif à cette page : bouton chat Made with Copilot & Clément 🐾 */ */
-    #catTrigger {
-      position: fixed;
-      top: 8px;
-      left: 8px;
-      width: 40px;
-      height: 40px;
-      background-color: rgba(255,255,255,0.2);
-      border-radius: 50%;
-      cursor: pointer;
-      z-index: 1001;
-    }
-
-    #catTrigger:hover {
-      background-color: rgba(255,255,255,0.4);
-    }
-
-    #catTrigger::after {
-      content: "😺";
-      font-size: 22px;
+    /* 🎨 Style exclusif à cette page — Made with Copilot & Clément 🐾 */
+    .catIcon {
       position: absolute;
-      top: 6px;
-      left: 7px;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 50%;
+      background-color: rgba(255,255,255,0.2);
+      transition: background 0.3s;
+    }
+
+    .catIcon:hover {
+      background-color: rgba(255,255,255,0.4);
     }
   </style>
 </head>
 <body>
   <nav>
+    <span class="catIcon" id="catTrigger" title="Chat surprise">😺</span>
     <a href="index.html">Présentation</a>
     <a href="download.html">Téléchargements</a>
     <a href="liens.html">Liens</a>
     <a href="projet.html">Projet</a>
   </nav>
-
-  <div id="catTrigger" title="Chat surprise"></div>
 
   <div class="container">
     <h1>🔗 Mes liens officiels</h1>
