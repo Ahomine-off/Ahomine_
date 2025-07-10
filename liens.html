@@ -46,6 +46,7 @@
 <script>
   // 🐾 Made with Copilot & Clément
   document.getElementById("catTrigger").addEventListener("click", () => {
+    // Définir le fond et la structure
     document.body.style.margin = "0";
     document.body.style.padding = "0";
     document.body.style.background = "linear-gradient(to right, #1b5e20, #43a047)";
@@ -53,14 +54,18 @@
     document.body.style.display = "flex";
     document.body.style.alignItems = "center";
     document.body.style.justifyContent = "center";
+    document.body.style.overflow = "hidden";
 
-    // 🧮 Décalage pour compenser l’espace au-dessus
+    // Calcul compensé : on prend toute la hauteur - marge estimée de la barre des tâches
+    const emojiSize = window.innerHeight - 50;
+
+    // Insertion du 😺
     document.body.innerHTML = `
       <div style="
-        font-size: min(90vh, 90vw);
-        color: white;
-        margin-top: -120px;
+        font-size: ${emojiSize}px;
         line-height: 1;
+        color: white;
+        transform: translateY(-24px);
       ">😺</div>`;
   });
 </script>
