@@ -49,19 +49,18 @@
     document.body.style.margin = "0";
     document.body.style.padding = "0";
     document.body.style.background = "linear-gradient(to right, #1b5e20, #43a047)";
+    document.body.style.height = "100vh";
+    document.body.style.display = "flex";
+    document.body.style.alignItems = "center";
+    document.body.style.justifyContent = "center";
+
+    // 🧮 Décalage pour compenser l’espace au-dessus
     document.body.innerHTML = `
       <div style="
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: min(80vh, 80vw);
+        font-size: min(90vh, 90vw);
         color: white;
-        overflow: hidden;
+        margin-top: -120px;
+        line-height: 1;
       ">😺</div>`;
   });
 </script>
