@@ -6,6 +6,32 @@
   <link rel="icon" type="image/png" href="image/Ahomine_.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 🎯 Style exclusif à cette page : bouton chat */
+    #catTrigger {
+      position: fixed;
+      top: 8px;
+      left: 8px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    #catTrigger:hover {
+      background-color: rgba(255,255,255,0.4);
+    }
+
+    #catTrigger::after {
+      content: "😺";
+      font-size: 22px;
+      position: absolute;
+      top: 6px;
+      left: 7px;
+    }
+  </style>
 </head>
 <body>
   <nav>
